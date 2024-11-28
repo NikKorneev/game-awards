@@ -14,7 +14,7 @@ const Hero = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [loadedVideos, setLoadedVideos] = useState(0);
 
-	const totalVideos = 3;
+	const totalVideos = 4;
 	const nextVideoRef = useRef<HTMLVideoElement>(null);
 
 	const handleVideoLoad = () => {
@@ -61,8 +61,9 @@ const Hero = () => {
 						opacity: 1,
 					},
 					{
-						opacity: 0.5,
-						duration: 1.5,
+						opacity: 0.3,
+						duration: 1,
+						delay: 0.3,
 					}
 				);
 			}
@@ -95,7 +96,7 @@ const Hero = () => {
 	useEffect(() => {
 		const timeout = setTimeout(() => {
 			setPrevIndex(curIndex);
-		}, 500);
+		}, 800);
 
 		return () => {
 			clearTimeout(timeout);
@@ -103,7 +104,7 @@ const Hero = () => {
 	}, [curIndex]);
 
 	useEffect(() => {
-		if (loadedVideos === totalVideos) {
+		if (loadedVideos >= totalVideos - 1) {
 			setIsLoading(false);
 		}
 	}, [loadedVideos]);
@@ -196,7 +197,7 @@ const Hero = () => {
 						id="watch-trailer"
 						title="Watch Trailer"
 						leftIcon={<TiLocationArrow />}
-						containerClass="bg-violet-300 flex-center gap-1 text-white"
+						containerClass="bg-violet-500 flex-center gap-1 text-white"
 					/>
 				</div>
 			</div>
