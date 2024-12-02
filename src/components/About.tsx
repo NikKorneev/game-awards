@@ -40,8 +40,8 @@ const About = () => {
 				<div className="about-subtext">
 					<p>The Game of Games begins here, now an epic MMORPG</p>
 					<p>
-						REDEFI<b>N</b>E unites every player from countless games
-						and platforms
+						REDEFINE unites every player from countless games and
+						platforms
 					</p>
 				</div>
 			</div>
