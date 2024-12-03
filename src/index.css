@@ -7,6 +7,7 @@ body {
 	width: 100dvw;
 	background-color: "#dfdff0";
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 @layer base {
