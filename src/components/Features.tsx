@@ -21,7 +21,7 @@ const Features = () => {
 						src="videos/feature-1.mp4"
 						title={
 							<>
-								radi<b>n</b>t
+								radi<b>a</b>nt
 							</>
 						}
 						descr="Discover the endless possibilities of the Metaverse and its potential impact on our lives."
